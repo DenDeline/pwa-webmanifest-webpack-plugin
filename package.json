@@ -34,6 +34,8 @@
   "devDependencies": {
     "@commitlint/cli": "^17.0.1",
     "@commitlint/config-conventional": "^17.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.26.0",
+    "@typescript-eslint/parser": "^5.26.0",
     "@webpack-contrib/eslint-config-webpack": "^3.0.0",
     "cspell": "^6.0.0",
     "del": "^6.1.1",

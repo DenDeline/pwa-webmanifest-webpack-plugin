@@ -1,7 +1,12 @@
 {
   "root": true,
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "@typescript-eslint"
+  ],
   "extends": [
     "@webpack-contrib/eslint-config-webpack",
+    "plugin:@typescript-eslint/recommended",
     "prettier"
   ]
 }
