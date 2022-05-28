@@ -1,0 +1,15 @@
+logs
+*.log
+npm-debug.log*
+package-lock.json
+.eslintcache
+/dist
+/node_modules
+.DS_Store
+Thumbs.db
+.idea
+.vscode
+*.sublime-project
+*.sublime-workspace
+.idea
+*.iml
