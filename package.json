@@ -2,29 +2,27 @@
   "name": "pwa-webmanifest-webpack-plugin",
   "version": "1.0.0",
   "description": "Simplifies creation of webmanifest file for PWA",
-  "main": "index.js",
-  "scripts": {
-    "clean": "del-cli dist",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "husky install",
-    "security": "npm audit --omit=dev"
-  },
+  "license": "MIT",
+  "author": "Rostislav Statko",
+  "main": "dist/index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/DenDeline/pwa-webmanifest-webpack-plugin.git"
   },
-  "keywords": [
-    "webpack",
-    "plugin",
-    "pwa",
-    "webmanifest"
-  ],
-  "author": "Rostislav Statko",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/DenDeline/pwa-webmanifest-webpack-plugin/issues"
   },
   "homepage": "https://github.com/DenDeline/pwa-webmanifest-webpack-plugin#readme",
+  "scripts": {
+    "build": "tsc -b",
+    "clean": "tsc -b --clean",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install",
+    "security": "npm audit --omit=dev"
+  },
+  "files": [
+    "dist"
+  ],
   "peerDependencies": {
     "webpack": "^5.0.0"
   },
@@ -50,8 +48,15 @@
     "webpack": "^5.72.1"
   },
   "lint-staged": {
-    "*.md": [
-      "cspell"
+    "src/**/*.ts": [
+      "eslint --fix",
+      "prettier --write"
     ]
-  }
+  },
+  "keywords": [
+    "webpack",
+    "plugin",
+    "pwa",
+    "webmanifest"
+  ]
 }
