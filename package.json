@@ -16,7 +16,7 @@
   "scripts": {
     "build": "tsc -b",
     "clean": "tsc -b --clean",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "prepare": "husky install",
     "security": "npm audit --omit=dev"
   },
@@ -35,6 +35,7 @@
   "devDependencies": {
     "@commitlint/cli": "^17.0.1",
     "@commitlint/config-conventional": "^17.0.0",
+    "@types/jest": "^27.5.1",
     "@typescript-eslint/eslint-plugin": "^5.26.0",
     "@typescript-eslint/parser": "^5.26.0",
     "@webpack-contrib/eslint-config-webpack": "^3.0.0",
@@ -43,17 +44,21 @@
     "del-cli": "^4.0.1",
     "eslint": "^8.16.0",
     "eslint-config-prettier": "^8.5.0",
+    "eslint-import-resolver-typescript": "^2.7.1",
     "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jest": "^26.4.2",
     "html-webpack-plugin": "^5.5.0",
     "husky": "^8.0.1",
+    "jest": "^28.1.0",
     "lint-staged": "^12.4.2",
     "prettier": "^2.6.2",
+    "ts-jest": "^28.0.3",
     "typescript": "^4.7.2",
     "webpack": "^5.72.1"
   },
   "lint-staged": {
-    "src/**/*.ts": [
-      "eslint --fix",
+    "*.{js|ts}|{src}/**/*.ts": [
+      "eslint --cache --fix",
       "prettier --write"
     ]
   },

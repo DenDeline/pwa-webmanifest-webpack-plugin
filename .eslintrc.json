@@ -2,11 +2,31 @@
   "root": true,
   "parser": "@typescript-eslint/parser",
   "plugins": [
-    "@typescript-eslint"
+    "@typescript-eslint",
+    "import"
   ],
   "extends": [
-    "@webpack-contrib/eslint-config-webpack",
+    "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
+    "plugin:import/recommended",
+    "plugin:import/typescript",
+    "@webpack-contrib/eslint-config-webpack",
     "prettier"
+  ],
+  "overrides": [
+    {
+      "files": [
+        "test/**"
+      ],
+      "plugins": [
+        "jest"
+      ],
+      "env": {
+        "jest/globals": true
+      },
+      "extends": [
+        "plugin:jest/recommended"
+      ]
+    }
   ]
 }

@@ -13,6 +13,5 @@
     "esModuleInterop": true,
     "newLine": "lf"
   },
-  "types": ["node"],
   "include": [ "./src/**/*" ]
 }
