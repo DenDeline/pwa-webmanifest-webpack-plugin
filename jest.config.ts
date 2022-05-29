@@ -1,11 +1,12 @@
-import type { Config } from '@jest/types'
+import type { InitialOptionsTsJest } from 'ts-jest'
 
-const configuration: Config.InitialOptions = {
+const configuration: InitialOptionsTsJest = {
+  preset: 'ts-jest',
   clearMocks: true,
   collectCoverage: true,
-  coverageDirectory: "coverage",
-  coverageProvider: "v8",
-  testEnvironment: "node",
+  coverageDirectory: 'coverage',
+  coverageProvider: 'v8',
+  testEnvironment: 'node',
 }
 
 export default configuration
