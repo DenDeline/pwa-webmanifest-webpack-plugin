@@ -10,7 +10,8 @@
     "declaration": true,
     "module": "CommonJS",
     "isolatedModules": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "newLine": "lf"
   },
   "types": ["node"],
   "include": [ "./src/**/*" ]
