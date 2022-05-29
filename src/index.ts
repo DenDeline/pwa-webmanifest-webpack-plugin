@@ -1,5 +1,24 @@
-import type { Compiler } from 'webpack';
+import { validate } from 'schema-utils'
+import type { Schema } from 'schema-utils/declarations/ValidationError'
 
-class PwaWebmanifestPlugin {}
+import PluginOptionsSchema from './options/plugin-options.json'
 
-export default PwaWebmanifestPlugin;
+export type Options = {
+  name?: string
+}
+
+class PwaWebmanifestPlugin {
+  options: Options
+
+  static defaultOptions = {}
+
+  constructor(options: Options = {}) {
+    validate(PluginOptionsSchema as Schema, options, {
+      baseDataPath: 'options',
+    })
+
+    this.options = Object.assign({}, options)
+  }
+}
+
+export default PwaWebmanifestPlugin

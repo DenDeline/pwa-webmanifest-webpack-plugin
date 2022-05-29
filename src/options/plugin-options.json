@@ -1,0 +1,12 @@
+{
+  "title": "Pwa Webmanifest Plugin options",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "This option represents the name of the web application as it is usually displayed to the user.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/Manifest/name"
+    }
+  }
+}
