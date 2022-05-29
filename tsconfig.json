@@ -8,7 +8,8 @@
     "types": ["node"],
     "resolveJsonModule": true,
     "declaration": true,
-    "module": "CommonJS"
+    "module": "CommonJS",
+    "isolatedModules": true
   },
   "types": ["node"],
   "include": [ "./src/**/*" ]
