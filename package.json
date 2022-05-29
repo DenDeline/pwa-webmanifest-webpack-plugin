@@ -26,6 +26,9 @@
   "peerDependencies": {
     "webpack": "^5.0.0"
   },
+  "optionalDependencies": {
+    "html-webpack-plugin": "^5.0.0"
+  },
   "dependencies": {
     "schema-utils": "^4.0.0"
   },
@@ -41,6 +44,7 @@
     "eslint": "^8.16.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.26.0",
+    "html-webpack-plugin": "^5.5.0",
     "husky": "^8.0.1",
     "lint-staged": "^12.4.2",
     "prettier": "^2.6.2",
