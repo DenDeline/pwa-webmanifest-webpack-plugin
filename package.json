@@ -57,7 +57,7 @@
     "webpack": "^5.72.1"
   },
   "lint-staged": {
-    "*.{js|ts}|{src}/**/*.ts": [
+    "*.{js,ts}|{src}/**/*.ts": [
       "eslint --cache --fix",
       "prettier --write"
     ]
